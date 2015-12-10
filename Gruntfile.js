@@ -36,13 +36,23 @@ module.exports = function (grunt) {
             }]
           },
           options: {
-            pretty: true,
-            debug: true
+            pretty: true
           }
         },
         bowercopy: {
           options: {
             destPrefix: '<%= paths.dist %>'
+          },
+          jquery: {
+            files: {
+              'js/jquery.js': 'jquery/dist/jquery.js'
+            }
+          },
+          bootstrap: {
+            files: {
+              'js/bootstrap.js': 'bootstrap/dist/js/bootstrap.js',
+              'css/bootstrap.css': 'bootstrap/dist/css/bootstrap.css'
+            }
           }
         },
         copy : {
