@@ -1,0 +1,18 @@
+doctype html
+html
+  head
+    title= title
+    meta(name="viewport",content="width=device-width, initial-scale=1")
+    block meta
+
+    link(rel='stylesheet', href='/css/bootstrap.css')
+    link(rel='stylesheet', href='/css/bootstrap-theme.css')
+
+    block stylesheets
+  body
+    block content
+
+  script(src='/js/jquery.js')
+  script(src='/js/bootstrap.js')
+
+  block scripts

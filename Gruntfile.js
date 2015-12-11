@@ -1,4 +1,3 @@
-// Generated on 2014-02-03 using generator-webapp 0.4.7
 'use strict';
 
 module.exports = function (grunt) {
@@ -51,7 +50,13 @@ module.exports = function (grunt) {
           bootstrap: {
             files: {
               'js/bootstrap.js': 'bootstrap/dist/js/bootstrap.js',
-              'css/bootstrap.css': 'bootstrap/dist/css/bootstrap.css'
+              'css/bootstrap-theme.css': 'bootstrap/dist/css/bootstrap-theme.css',
+              'css/bootstrap.css': 'bootstrap/dist/css/bootstrap.css',
+              'fonts/glyphicons-halflings-regular.eot': 'bootstrap/dist/fonts/glyphicons-halflings-regular.eot',
+              'fonts/glyphicons-halflings-regular.svg': 'bootstrap/dist/fonts/glyphicons-halflings-regular.svg',
+              'fonts/glyphicons-halflings-regular.ttf': 'bootstrap/dist/fonts/glyphicons-halflings-regular.ttf',
+              'fonts/glyphicons-halflings-regular.woff': 'bootstrap/dist/fonts/glyphicons-halflings-regular.woff',
+              'fonts/glyphicons-halflings-regular.woff2': 'bootstrap/dist/fonts/glyphicons-halflings-regular.woff2'
             }
           }
         },
@@ -62,7 +67,7 @@ module.exports = function (grunt) {
               dot    : false,
               cwd    : '<%= paths.app %>',
               dest   : '<%= paths.dist %>',
-              src    : [ '*.jade', '*.{ico,png,txt}', '.htaccess', 'images/{,*/}*.webp', '{,*/}*.html', 'styles/fonts/{,*/}*.*' ]
+              src    : ['*.{ico,png,txt}', '.htaccess', 'images/{,*/}*.webp', '{,*/}*.html', 'styles/fonts/{,*/}*.*' ]
             }]
           },
           styles : {

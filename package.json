@@ -17,7 +17,8 @@
     "grunt-contrib-jade": "^0.15.0",
     "grunt-contrib-watch": "^0.5.3",
     "load-grunt-tasks": "^0.2.0",
-    "time-grunt": "^0.2.3"
+    "time-grunt": "^0.2.3",
+    "tsc": "^1.20150623.0"
   },
   "devDependencies": {
     "grunt-bowercopy": "^1.2.3"
