@@ -1,13 +1,13 @@
 {
-  "name": "lcd",
+  "name": "ProjectTemplate",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Simple project template based on grunt+bower",
+  "main": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Aleksey Bogomolov",
+  "license": "MIT",
   "dependencies": {
     "bower": "^1.7.0",
     "grunt": "^0.4.5",
@@ -16,9 +16,11 @@
     "grunt-contrib-copy": "^0.4.1",
     "grunt-contrib-jade": "^0.15.0",
     "grunt-contrib-watch": "^0.5.3",
+    "grunt-typescript": "^0.8.0",
     "load-grunt-tasks": "^0.2.0",
     "time-grunt": "^0.2.3",
-    "tsc": "^1.20150623.0"
+    "tsc": "^1.20150623.0",
+    "tsd": "^0.6.5"
   },
   "devDependencies": {
     "grunt-bowercopy": "^1.2.3"

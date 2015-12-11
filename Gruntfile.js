@@ -60,6 +60,12 @@ module.exports = function (grunt) {
             }
           }
         },
+        typescript: {
+          build: {
+            src: ['<%= paths.app %>/typescript/**/*.ts'],
+            dest: '<%= paths.dist %>/js/'
+          }
+        },
         copy : {
           dist : {
             files : [ {
@@ -84,6 +90,7 @@ module.exports = function (grunt) {
         'clean:dist',
         'bowercopy',
         'jade:compile',
+        'typescript:build'
         //'concat',
         //'copy:dist'
     ]);

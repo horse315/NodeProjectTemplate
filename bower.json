@@ -1,7 +1,7 @@
 {
-  "name": "lcd",
-  "version": "0.0.0",
-  "description": "",
+  "name": "ProjectTemplate",
+  "version": "1.0.0",
+  "description": "Simple project template based on grunt+bower",
   "main": "",
   "moduleType": [
     "node"
