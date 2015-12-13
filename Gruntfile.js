@@ -66,6 +66,13 @@ module.exports = function (grunt) {
             dest: '<%= paths.dist %>/js/'
           }
         },
+        less: {
+          build: {
+            files: {
+              '<%= paths.dist %>/css/lcd.css': '<%= paths.app %>/less/lcd.less',
+            }
+          },
+        },
         copy : {
           dist : {
             files : [ {
@@ -90,7 +97,8 @@ module.exports = function (grunt) {
         'clean:dist',
         'bowercopy',
         'jade:compile',
-        'typescript:build'
+        'typescript:build',
+        'less:build'
         //'concat',
         //'copy:dist'
     ]);

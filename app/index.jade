@@ -1,4 +1,18 @@
 extends ./partials/layout.jade
 
+block stylesheets
+  link(rel='stylesheet', href='./css/lcd.css')
+
 block content
-  p Some index info
+  .container
+    h1 HD44780 LCD custom char generator
+
+    .row
+      .col-xs-8
+        .lcd
+          - for (var y = 0; y < 8; y++) {
+            ul
+              - for (var x = 0; x < 5; x++)
+                - var pixId = 'pix_' + y + '_' + x
+                li(id= pixId)
+          - }
